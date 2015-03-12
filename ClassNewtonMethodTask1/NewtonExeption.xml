@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase>
+    <value>99</value>
+    <power>0</power>
+    <accuracy>0.0001</accuracy>
+  </TestCase>
+  <TestCase>
+    <value>0</value>
+    <power>0</power>
+    <accuracy>0.0000001</accuracy>
+  </TestCase>
+  <TestCase>
+    <value>-5</value>
+    <power>4</power>
+    <accuracy>0.0000001</accuracy>
+  </TestCase>
+  <TestCase>
+    <value>-55</value>
+    <power>0</power>
+    <accuracy>0.0000001</accuracy>
+  </TestCase>
+  <TestCase>
+    <value>-22</value>
+    <power>6</power>
+    <accuracy>0,0000001</accuracy>
+  </TestCase>
+  
+</TestCases>
