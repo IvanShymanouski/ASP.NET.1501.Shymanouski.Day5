@@ -117,5 +117,31 @@ namespace ClassMatrixSortTask2.Tests
             MatrixSort.Sort(matrix, comparer);
 
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void MatrixSortSumComparerNullExeption()
+        {
+            const int xSize = 10;
+
+            int[][] matrix = new int[xSize][];
+            Random random = new Random();
+
+            for (int i = 0; i < xSize; i++)
+            {
+                int ySize = random.Next(1, 11);
+                matrix[i] = new int[ySize];
+                for (int j = 0; j < ySize; j++)
+                {
+                    matrix[i][j] = random.Next(-1000, 1000);
+                }
+            }
+            int[][] matrix1 = (Int32[][])matrix.Clone();
+
+            Func<int[], int[], bool> comparer = null;
+
+            MatrixSort.Sort(matrix, comparer);
+
+        }
     }
 }

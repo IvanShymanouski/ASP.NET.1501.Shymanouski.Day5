@@ -27,7 +27,7 @@ namespace ClassMatrixSortTask2
             }
             catch (NullReferenceException ex)
             {
-                throw new ArgumentNullException("", ex);
+                throw new ArgumentNullException("array parameter must not be null", ex);
             }
             for (int i = 0; i < array.Length; i++)
             {
@@ -40,6 +40,10 @@ namespace ClassMatrixSortTask2
             catch (ArgumentException ex)
             {
                 throw new InvalidOperationException("", ex);
+            }
+            catch (NullReferenceException ex)
+            {
+                throw new ArgumentNullException("comparer parameter must not be null", ex);
             }
             RearrangementOfArrayByIndex(array, index);
         }
